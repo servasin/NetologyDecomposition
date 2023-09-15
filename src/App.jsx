@@ -6,10 +6,19 @@ import InfoBlock from './components/InfoBlock'
 
 function App() {
 
+  const links = [
+    { href: '#', text: 'Новости'},
+    { href: '#', text: 'Картинки'},
+    { href: '#', text: 'Видео'},
+    { href: '#', text: 'Карты'},
+    { href: '#', text: 'Маркет'},
+    { href: '#', text: 'Ещё'},
+  ]
+
   return (
     <div className='content'>
       <header>
-        <NavLinks />
+        <NavLinks links={links}/>
         <SearchForm />
       </header>
       <main>
